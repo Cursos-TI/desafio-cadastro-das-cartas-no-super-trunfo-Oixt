@@ -2,8 +2,9 @@
 int main(){
 //variaveis 1
     char estado, nomedacidade[20];
-    int  codigodacidade, populacao, pontosturisticos;
+    int  codigodacidade, pontosturisticos;
     float area, PIB, densidade, PIBper;
+    unsigned long int populacao;
 //questinonario
     printf("***CADASTRAMENTO DE CARTAS DO SUPER TRUNFO***\n");
     printf("*-=-=CARTA 1=-=-*\n\n");
@@ -29,9 +30,10 @@ int main(){
     scanf("%f",&PIB);
 
 //calculos
-PIB = PIB * 1000000000;
+
 densidade = populacao / area;
-PIBper = PIB / populacao;
+PIBper = (PIB * 1000000000) / populacao;
+
 //impressao
     printf("\n\n\n*-=-= CARTA 1 =-=-*\n\n");
     printf("Nome da cidade: %s.\n", nomedacidade);
@@ -48,8 +50,10 @@ PIBper = PIB / populacao;
 
     //variaveis 2
     char estado2, nomedacidade2[10];
-    int  codigodacidade2, populacao2, pontosturisticos2;
+    int  codigodacidade2, pontosturisticos2;
     float area2, PIB2, densidade2, PIBper2;
+    unsigned long int populacao2;
+    
 //questinonario
     printf("\n*-=-=CARTA 2=-=-*\n\n");
     printf("Insira o nome da cidade:\n");
@@ -72,10 +76,12 @@ PIBper = PIB / populacao;
 
     printf("Insira o PIB(Bilhoes): \n");
     scanf("%f",&PIB2);
+
 //calculos2
-PIB2 = PIB2 * 1000000000;
+
 densidade2 = populacao2 / area2;
-PIBper2 = PIB2 / populacao2;
+PIBper2 = (PIB2 * 1000000000) / populacao2;
+
 //impressao
     printf("\n\n\n*-=-= CARTA 2 =-=-*\n\n");
     printf("Nome da cidade:  %s.\n", nomedacidade2);
