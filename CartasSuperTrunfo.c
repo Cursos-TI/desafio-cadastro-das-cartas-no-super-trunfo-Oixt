@@ -53,7 +53,7 @@ SuperPoder = (float) populacao + area + PIB + PIBper + (1 / densidade);
 
 
     //variaveis 2
-    char estado2, nomedacidade2[10];
+    char estado2, nomedacidade2[13];
     int  codigodacidade2, pontosturisticos2;
     float area2, PIB2, densidade2, PIBper2;
     unsigned long int populacao2;
@@ -69,8 +69,8 @@ SuperPoder = (float) populacao + area + PIB + PIBper + (1 / densidade);
     printf("Insira o codigo da carta(Numero de 1 a 4): \n");
     scanf("%d",&codigodacidade2);
 
-    printf("insira o numero de Pontos Turisticos que a cidade de %s tem: \n",nomedacidade2);
-    scanf("%d",&pontosturisticos2);
+    printf("insira o numero de Pontos Turisticos que a cidade de %s tem: \n", nomedacidade2);
+    scanf("%d", &pontosturisticos2);
 
     printf("Insira a populacao(Milhoes):\n");
     scanf("%d",&populacao2);
